@@ -6,7 +6,7 @@
 /*   By: ncolomer <ncolomer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 20:27:58 by ncolomer          #+#    #+#             */
-/*   Updated: 2019/10/19 02:40:32 by ncolomer         ###   ########.fr       */
+/*   Updated: 2019/10/22 16:53:29 by ncolomer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,9 +114,9 @@ int	main(int argc, char const *argv[])
 	print_ip_binary(ip);
 	printf("\nMask:\t\t\t%u.%u.%u.%u\n\t\t\t", mask[0], mask[1], mask[2], mask[3]);
 	print_ip_binary(mask);
-	printf("\nSubnet:\t\t\t%u.%u.%u.%u/%u\n\t\t\t", subnet[0], subnet[1], subnet[2], subnet[3], cidr);
+	printf("\nHost:\t\t\t%u.%u.%u.%u/%u\n\t\t\t", subnet[0], subnet[1], subnet[2], subnet[3], cidr);
 	print_ip_binary(subnet);
-	printf("\nHost:\t\t\t%u.%u.%u.%u\n\t\t\t", host[0], host[1], host[2], host[3]);
+	printf("\nIP (No Host):\t\t%u.%u.%u.%u\n\t\t\t", host[0], host[1], host[2], host[3]);
 	print_ip_binary(host);
 	printf("\nAvailable addresses:\t%d (without host and broadcast: %d)", available_addresses, (available_addresses <= 2) ? available_addresses : available_addresses - 2);
 	printf("\nIP Range:\t\t%u.%u.%u.%u - %u.%u.%u.%u\n", subnet[0], subnet[1], subnet[2], subnet[3], range[0], range[1], range[2], range[3]);
